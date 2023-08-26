@@ -1,0 +1,59 @@
+
+.dropDown
+{
+  /* border: .2em solid teal; */
+  width: 400px;
+  position: relative;
+}
+
+.dropDown .select
+{
+  padding: .9em 1.3em;
+  background-color: #fff;
+  box-shadow: 0 .3em .8em #888;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.dropDown .select .caret
+{
+  width: 20px;
+  height: 20px;
+  /* background-color: #f00; */
+  border-top: 10px solid #222;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  width: 0;
+  height: 0;
+  transition: .3s;
+}
+
+
+.dropDown .content
+{
+  width: 100%;
+  transition: .3s;
+  list-style: none;
+  /* border: 2px solid red; */
+  position: absolute;
+  top: 140%;
+  background-color: #fff;
+  box-shadow: 0 .3em .8em #888;
+  
+}
+
+.dropDown .content li
+{
+  padding: .9em 1.3em;
+  transition: .3s;
+}
+
+.dropDown .content li:hover
+{
+  background-color: #888;
+  cursor: pointer;
+  color: #fff;
+}

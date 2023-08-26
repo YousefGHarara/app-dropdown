@@ -1,0 +1,139 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.section
+{
+  height: 200vh;
+}
+
+.App2
+{
+  min-height: 100vh;
+  position: relative;
+  background-color: #999;
+}
+
+.App2 .menu-trigger img
+{
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.dropdown-menu
+{
+  position: absolute;
+  right: 2em;
+  top: 8em;
+  background-color: #fff;
+  box-shadow: 0 .8em 1em #888;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.dropdown-menu.active
+{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: .6s;
+}
+
+.dropdown-menu.inactive
+{
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: .3s;
+}
+
+.dropdown-menu::before
+{
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: 2em;
+  /* background-color: red; */
+  width: 0;
+  border-top: 10px solid #fff;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  transform: rotate(180deg);
+  height: 0;
+}
+
+
+.dropdown-menu h3
+{
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 1.2em 0;
+}
+
+.dropdown-menu h3 span
+{
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.dropdown-menu ul li
+{
+  padding: .9em 0;
+  border-top: 1px solid rgb(0 0 0 / .1);
+  cursor: pointer;
+}
+
+
+.dropdown-menu ul li:hover p
+{
+  color: #ff3f46;
+}
+
+.dropdown-menu ul li:hover img
+{
+  opacity: .9;
+}
+
+.dropdown-menu img
+{
+  cursor: pointer;
+  opacity: .1;
+}
+
+.dropdownItem
+{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  /* justify-content: center; */
+}
+
+.dropdownItem img
+{
+  max-width: 20px;
+  margin-right: 10px;
+  opacity: .5;;
+  transition: .5s;
+  margin-left: 50px;
+}
